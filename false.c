@@ -4,13 +4,16 @@
 
 void main(){
     float e,f1,f2,x1,x2,x0,f0;
-    printf("Enter the stopping criteria: ");
+    printf("Enter stopping criteria: ");
     scanf("%f",&e);
     do{
         printf("Enter the inital guessess: ");
         scanf("%f %f",&x1,&x2);
         f1=f(x1);
         f2=f(x2);
+        if(f1*f2>0){
+            printf("Initial guess is wrong. Try again\n");
+        }
     }while(f1*f2>0);
     do{
     x0= x1-((f1*(x2-x1))/(f2-f1));

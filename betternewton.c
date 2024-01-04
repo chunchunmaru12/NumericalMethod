@@ -2,7 +2,7 @@
 #include<math.h>
 #include<stdlib.h>
 float function(float x){
-       return (3*x-cos(x) -1);
+       return (pow(x,3)-2*x-5);
 }
 float calculateDerivative(float (*function)(float), float x, float h) {
     return (function(x + h) - function(x)) / h;

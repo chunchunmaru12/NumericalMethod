@@ -20,7 +20,7 @@ void main(){
             exit(1);
         }
         x1=x0-(f0/g0);
-        x0=x1;
+        x0=x1;  
         count++;
         if(count>max){
             printf("divergent");
@@ -28,4 +28,5 @@ void main(){
         }
     }while(fabs(f(x1))>e);
     printf("You root is : %f",x1);
+    printf("\nTotal number of iterations: %d\n",count);
 }

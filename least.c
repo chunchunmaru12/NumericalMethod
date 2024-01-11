@@ -22,6 +22,7 @@ void main(){
         sx2+=pow(x[i],2);
     }
     a=((sy*sx2)/(n*sx2-sx*sx))-((sxy*sx)/(n*sx2-sx*sx));
+    //b=(sy-n*a)/sx;
     b=((n*sxy)/(n*sx2-sx*sx))-((sx*sy)/(n*sx2-sx*sx));
     printf("%f\n",a);    
     printf("%f\n",b);

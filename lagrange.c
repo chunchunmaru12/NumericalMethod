@@ -10,7 +10,7 @@ void main(){
     for(int i=0;i<n;i++){
         printf("Enter the value of X:  ");
         scanf("%f",&x[i]);
-        printf("\nEnter the value of Y: ");
+        printf("Enter the value of Y: ");
         scanf("%f",&y[i]);
     }
     printf("\nWhat value do u want? \n");
